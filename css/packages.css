@@ -1,0 +1,316 @@
+ 
+
+.navbar {
+    background: linear-gradient(135deg, rgb(18, 18, 21), gray);
+    
+}
+
+.logo {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+     transform: translateX(-50%);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+    bottom: 40px;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;}
+        
+
+        .packags {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+            align-items: end;
+        }
+
+        .card {
+            max-width: 350px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            background: white;
+          
+        }
+        
+        
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-row h2 {
+            font-size: 20px;
+        }
+
+        .days {
+            background: orange;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        .route {
+            margin: 8px 0;
+            font-size: 14px;
+            color: brown;
+        }
+
+        .features,
+        .places {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .features li,
+        .places li {
+            font-size: 14px;
+            padding: 4px 0;
+        }
+
+        .book-btn {
+            width: 100%;
+            padding: 10px;
+            background: pink;
+            color: rgb(245, 245, 245);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .book-btn:hover {
+            background: orangered;
+        }
+
+        .price-box {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .price-box strong {
+            font-size: 20px;
+            color: black;
+        }
+   
+
+.packags {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    background: white;
+}
+
+        .card {
+            max-width: 350px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            background: white;
+           
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+}
+
+.title-row h2 {
+    font-size: 19px;
+    color: black;
+}
+
+.days {
+    background: rgb(0, 195, 255);
+    color: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.route {
+    margin: 8px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+
+.features {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.features li {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+
+.book-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: gray;
+    border: none;
+    color:white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background:red;
+}
+
+
+.price-box {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+}
+
+.price-box strong {
+    font-size: 20px;
+    color: red;
+}
+         
+        @media (min-width: 768px) {
+            .packags {
+                justify-content: center;
+
+            }
+
+            .card {
+                max-width: 400px;
+            }
+
+        }
+       
+   
+
+.footer {
+    background: black;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+.footer-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 16px;
+    color: rgb(225, 225, 17);
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+    margin-left: 18px;
+    
+}
+
+.footer-box ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.footer-bottom {
+    background: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+ 
+
+
+
+        
+    

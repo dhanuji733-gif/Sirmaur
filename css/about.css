@@ -1,0 +1,284 @@
+
+
+ .navbar {
+    background: linear-gradient(135deg, rgb(18, 18, 21), gray);
+    position: relative;
+    bottom: 30px;
+        
+}
+
+.logo {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+     transform: translateX(-50%);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+    bottom: 90px;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.banner {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.banner h2 {
+    font-size: 40px;
+    color: rgb(10, 9, 9);
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    font-size: 45px;
+    margin: 30px 0 15px;
+    color: rgb(21, 3, 3);
+}
+
+.hed, .hed1 {
+    margin-top: 60px;
+    font-size: 32px;
+    color: blueviolet;
+}
+
+
+.banner p {
+    font-size: 18px;
+    color: gray;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+
+.click {
+    text-decoration: none;
+}
+
+.book {
+    display: inline-block;
+    color: rgb(239, 247, 97);
+    background: linear-gradient(45deg, rgb(147, 59, 59),rgb(107, 107, 182));
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.book:hover {
+    background: linear-gradient(45deg, rgb(0, 187, 255), rgb(0, 187, 255));
+    transform: scale(1.05);
+}
+
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+
+.card {
+    margin: 30px auto;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.child {
+    font-size: 18px;
+    color: rgb(0, 119, 255);
+}
+
+
+.fav, .fav1, .fav2 {
+    display: block;
+    margin: 20px auto 10px;
+}
+
+.fab, .fab1, .fab2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.event {
+    margin-bottom: 20px;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+
+.rotate img {
+    width: 250px;
+    margin: 10px;
+}
+
+
+@media (max-width: 992px) {
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .images img {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .banner {
+        padding: 20px 15px;
+    }
+
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    .banner h1 {
+        font-size: 26px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .rotate img {
+        width: 180px;
+    }
+}
+
+
+.footer {
+    background: black;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 16px;
+    color: rgb(225, 225, 17);
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+    margin-left: 18px;
+    
+}
+
+.footer-box ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.footer-bottom {
+    background: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}

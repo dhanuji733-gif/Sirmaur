@@ -1,0 +1,231 @@
+.navbar {
+    background: linear-gradient(135deg, rgb(18, 18, 21), gray);
+  
+    
+}
+
+.logo {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+     transform: translateX(-50%);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+    bottom: 40px;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('d:/Tourisum/shimla.jpg') ;height: 3240px; 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.click {
+    text-decoration: none;
+}
+
+.book {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: yellowgreen;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.book:hover {
+    background: white;
+}
+
+.view {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.view h2 {
+    margin: 20px 0;
+}
+
+.card,
+.card1,
+.card2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.child,
+.child1,
+.child2 {
+    max-width: 550px;
+    background: rgb(33, 32, 32);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.child img,
+.child1 img,
+.child2 img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+@media(max-width:600px) {
+
+    .banner {
+        padding: 40px 15px;
+    }
+
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .child,
+    .child1,
+    .child2 {
+        padding: 15px;
+    }
+}
+
+
+
+.footer {
+    background: black;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 16px;
+    color: rgb(225, 225, 17);
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+    margin-left: 18px;
+
+}
+
+.footer-box ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.footer-bottom {
+    background: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
