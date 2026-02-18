@@ -1,43 +1,48 @@
- 
 
-.navbar {
+
+ .navbar {
     background: linear-gradient(135deg, rgb(18, 18, 21), gray);
-    
+   display: flex;
+   justify-content: space-between; 
+  align-items: center;
+  padding: 10px 5%;
+  flex-wrap: wrap;
+        
 }
 
 .logo {
-    color: red;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
+    color: white;
+    
+}
+
+.logo span {
+    color: red;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: right;
+    /* justify-content: right; */
     gap: 20px;
-    position: absolute;
-    left: 50%;
-     transform: translateX(-50%);
+    
 }
 
 .nav-links li a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
-    position: relative;
     transition: 0.3s;
-    bottom: 40px;
+   
 }
 
 .nav-links li a::after {
     content: "";
-    position: absolute;
+    display: block;
     width: 0%;
     height: 2px;
     background: white;
-    left: 0;
-    bottom: -5px;
     transition: 0.3s;
 }
 
@@ -45,11 +50,38 @@
     width: 100%;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
+        align-items: center;
+    }
+} */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Logo upar, Menu niche */
+        align-items: flex-start; /* Sab kuch LEFT side mein alignment ke liye */
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Isse menu poori jagah lega */
+        gap: 10px;
+        padding: 0;
+        margin-top: 15px;
+        text-align: left; /* Links ko left mein rakhne ke liye */
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+    .logo {
+        font-size: 24px; /* Choti screen par font thoda chota */
     }
 }
+
+
+
 
       * {
             margin: 0;
